@@ -1,0 +1,500 @@
+/*font-family:  prompt, sans-serif, Arial, Helvetica;*/
+
+@font-face {
+    font-family: "Prompt";
+    src: url(../assets/Prompt-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding-bottom: 10px;
+}
+
+body{
+    height: 100vh;
+}
+
+
+.contenedor-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.estilo-neon{
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    margin: 2px;
+    background-color: rgba(17, 17, 17, 0.705);
+    text-align: center;
+    color: bisque;
+    width: 30%;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+}
+
+/*barra de navegacion*/
+.navegacion {
+    padding-bottom: 30px;
+    background-color: #ea2731;
+}
+
+.hamburguesa {
+    font-size: 30px;
+    font-family: "Prompt";
+    padding: 0px;
+    background-color: #2a4664;
+}
+
+.titulo-header {
+    font-family: "Prompt";
+    font-size: 30px;
+}
+
+.titulo-menunav {
+    font-family: "Prompt";
+    font-size: 15px;
+}
+/*inicio*/
+
+
+
+/*futbol*/
+.contenedor-profesional {
+    display: grid;
+    width: 100%;
+    height: 95vh;
+    padding-top: 86px;
+    flex-wrap: nowrap;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 5% 23% 23% 23% 23%;
+    grid-template-areas:
+        ".........  profesion   profesion       ........."
+        "campeon33  campeon36   campeon46       campeon59"
+        "campeon68  campeon72m  campeon72n      campeon74"
+        "campeon95  campeon01   mercosur        sudamericana"
+        "campeon07  campeon13   libertadores    supercopa";
+}
+
+.profesion {
+    grid-area: profesion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.campeon33 {
+    grid-area: campeon33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.campeon36 {
+    grid-area: campeon36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.campeon46 {
+    grid-area: campeon46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.campeon59 {
+    grid-area: campeon59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.campeon68 {
+    grid-area: campeon68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.campeon72m {
+    grid-area: campeon72m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+.campeon72n {
+    grid-area: campeon72n;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    align-items: center;
+}
+
+.campeon74 {
+    grid-area: campeon74;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campeon95 {
+    grid-area: campeon95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campeon01 {
+    grid-area: campeon01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mercosur {
+    grid-area: mercosur;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sudamericana {
+    grid-area: sudamericana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campeon07 {
+    grid-area: campeon07;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campeon13 {
+    grid-area: campeon13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.libertadores {
+    grid-area: libertadores;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.supercopa {
+    grid-area: supercopa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+
+.separador {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 13vh;
+    padding-bottom: 2vh;
+}
+
+.separador-top{
+    padding-top: 1vh;
+}
+
+.separador-tarjetas_futbol{
+    padding: 13vh 1vh 0 1vw;
+}
+
+.card-img-top {
+    object-fit: cover;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+.tarjetas_futbol_img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+
+.titulo {
+    background-color: #2a4664;
+    border-color: #ea2731;
+    border-style: solid;
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: bisque;
+}
+
+.subtitulo {
+    background-color: rgba(17, 17, 17, 0.705);
+    border-radius: 3px;
+    border: #fdfdfea9 solid;
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    color: bisque;
+    width: 30%;
+}
+
+.parrafo {
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    margin: 2px;
+    background-color: rgba(17, 17, 17, 0.705);
+    text-align: center;
+    color: bisque;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+}
+
+.parrafo_chico {
+    margin: 2px;
+    padding: 10px;
+    background-color: #2a4664;
+    color: bisque;
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    font-size: larger;
+}
+
+
+
+.cuervo {
+    margin: 10px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 1px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.card-group>div {
+    margin-top: 95px;
+    padding: 2px;
+
+}
+
+
+.card {
+    width: 100%;
+    color: bisque;
+    background-color: rgba(0, 0, 0, 0.459) ;
+
+}
+
+
+
+
+.videoindex {
+    border: none;
+    background-color: bisque;
+    width: 100%;
+    height: 300px;
+    padding: 0%;
+}
+
+/*el club*/
+.contenedor_club {
+    display: grid;
+    width: 100%;
+    height: 95vh;
+    padding-top: 86px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "hijo1  hijo1"
+        "hijo2  hijo4"
+        "hijo3  hijo4"
+        "hijo5  hijo5";
+}
+
+.hijo {
+    border: #ea2731 solid 1px;
+    border-radius: 3px;
+    width: 100%;
+    height: 100%;
+}
+
+.hijo1 {
+    grid-area: hijo1;
+    background-color: #2a4664;
+}
+
+.hijo1 h1 {
+    width: 100%;
+}
+
+.hijo2 {
+    grid-area: hijo2;
+    align-self: stretch;
+}
+
+.hijo3 {
+    grid-area: hijo3;
+}
+
+.hijo4 {
+    grid-area: hijo4;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hijo5 {
+    grid-area: hijo5;
+}
+
+/*---contacto---*/
+
+.fondo {
+    background-image: url("../images/fondo-form-dark.png");
+}
+
+
+.titulo-contacto {
+    font-size: 25px;
+    padding: 10px;   
+}
+
+.parrafo-contacto {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.formulario {
+    width: 55%;
+    height: 30%;
+    background-position: top center;
+    margin: 1px auto;
+    padding: 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formulario label {
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    color: bisque;
+    font-weight: lighter;
+    display: block;
+    box-shadow: 2px 2px 5px white;
+    border-radius: 5px;
+}
+
+.formulario input {
+    color: bisque;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+    background-color: transparent;
+}
+
+.formulario textarea {
+    color: bisque;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px white;
+
+}
+
+.formulario button {
+    margin-top: 2px;
+    background-color: rgba(128, 128, 128, 0.788);
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+    align-items: center;
+    color: bisque;
+}
+
+
+.gasometros {
+    width: 670px;
+    height: 100%;
+    display: inline;
+    object-position: center;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #2a4664;
+    border-color: #ea2731;
+    border-style: solid;
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    font-size: 20px;
+    font-weight: 250;
+    text-align: center;
+    color: bisque;
+}
+
+@media (max-width:400px){
+    .titulo-contacto{
+        font-size: 17px;
+    }
+
+    .parrafo-contacto{
+        font-size: 8px;
+    }
+
+    .titulo-header {
+        font-size: 20px;
+    }
+
+    .subtitulo{
+        font-size: 15px;
+    }
+
+    .formulario label {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:750px){
+    .estilo-neon{
+        width: 80%;
+    }
+}
