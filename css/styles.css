@@ -15,10 +15,6 @@ header{
     padding-bottom: 10px;
 }
 
-body{
-    height: 100vh;
-}
-
 
 .contenedor-flex{
     display: flex;
@@ -62,7 +58,6 @@ body{
     font-family: "Prompt";
     font-size: 15px;
 }
-/*inicio*/
 
 
 
@@ -240,29 +235,55 @@ body{
     padding: 13vh 1vh 0 1vw;
 }
 
+.card{
+    max-height: 70vh;
+    min-height: 70vh;
+    overflow: hidden;
+}
+
+
+.card:hover{
+    box-shadow: 2px 2px 5px white;
+}
 .card-img-top {
     object-fit: cover;
-    max-height: 200px;
-    min-height: 200px;
+    min-height: 35vh;
+    height: 35vh;
 }
 
-.tarjetas_futbol_img{
-    width: 100%;
-    height: 50%;
+.card-text {
+    height: 30vh;
+    overflow: hidden;
+}
+
+/*la gloriosa*/
+
+.tarjeta-gloriosa{
+    max-width: 25%;
+    height: 100%;
+}
+
+.card-text{
+    font-family: "Prompt";
+    height: 30%;
+}
+
+.card-body a {
+    background-color:rgba(128, 128, 128, 0.788);
+    border-top:none;
+    border-left:none;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+}
+
+.card-body a:hover{
+    background-color:rgba(128, 128, 128, 0.788);
+    border:none;
+}
+
+.tarjeta-gloriosa img{
     object-fit: cover;
-}
-
-
-
-.titulo {
-    background-color: #2a4664;
-    border-color: #ea2731;
-    border-style: solid;
-    font-family: "Prompt", sans-serif, Arial, Helvetica;
-    font-size: 60px;
-    font-weight: 700;
-    text-align: center;
-    color: bisque;
+    max-height: 50%;
 }
 
 .subtitulo {
@@ -287,16 +308,16 @@ body{
     box-shadow: 2px 2px 5px white;
 }
 
-.parrafo_chico {
-    margin: 2px;
-    padding: 10px;
-    background-color: #2a4664;
-    color: bisque;
+.neon-w100{
     font-family: "Prompt", sans-serif, Arial, Helvetica;
-    font-size: larger;
+    margin: 2px;
+    background-color: rgba(17, 17, 17, 0.705);
+    text-align: center;
+    color: bisque;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
 }
-
-
 
 .cuervo {
     margin: 10px;
@@ -320,7 +341,6 @@ body{
     width: 100%;
     color: bisque;
     background-color: rgba(0, 0, 0, 0.459) ;
-
 }
 
 
@@ -335,53 +355,52 @@ body{
 }
 
 /*el club*/
+
 .contenedor_club {
     display: grid;
     width: 100%;
     height: 95vh;
-    padding-top: 86px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "hijo1  hijo1"
-        "hijo2  hijo4"
-        "hijo3  hijo4"
-        "hijo5  hijo5";
+        "hijo1  hijo3"
+        "hijo2  hijo3";
+    gap: 1vh 1vh;
+}
+.fundacion{
+    width: 100%;
 }
 
 .hijo {
-    border: #ea2731 solid 1px;
     border-radius: 3px;
     width: 100%;
     height: 100%;
 }
 
-.hijo1 {
+.hijo1{
     grid-area: hijo1;
-    background-color: #2a4664;
-}
-
-.hijo1 h1 {
-    width: 100%;
+    align-self: stretch;
+    max-height: 65vh;
+    border-radius: 5px;
 }
 
 .hijo2 {
     grid-area: hijo2;
     align-self: stretch;
+    max-height: 65vh;
 }
 
 .hijo3 {
     grid-area: hijo3;
+    padding-right: 0.5vw;
+    height: 80vh;
 }
 
-.hijo4 {
-    grid-area: hijo4;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.hijo5 {
-    grid-area: hijo5;
+.gasometros {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /*---contacto---*/
@@ -451,26 +470,44 @@ body{
 }
 
 
-.gasometros {
-    width: 670px;
-    height: 100%;
-    display: inline;
-    object-position: center;
-    object-fit: cover;
-}
+
 
 .footer {
-    background-color: #2a4664;
-    border-color: #ea2731;
-    border-style: solid;
     font-family: "Prompt", sans-serif, Arial, Helvetica;
-    font-size: 20px;
-    font-weight: 250;
+    margin: 2px;
+    background-color: rgba(17, 17, 17, 0.705);
     text-align: center;
     color: bisque;
+    font-size:medium;
+    width:100vw;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+    padding-left: 1px;
 }
 
-@media (max-width:400px){
+.grid-body{
+    display: grid;
+    grid-template-columns: 1 , 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "h-nav"
+        "h-main"
+        "h-footer";
+}
+.h-nav{
+    grid-area: h-nav;
+}
+
+.h-main{
+    grid-area: h-main;
+}
+
+.h-footer{
+    grid-area: h-footer;
+}
+
+/*@media (max-width:400px){
     .titulo-contacto{
         font-size: 17px;
     }
@@ -491,10 +528,13 @@ body{
         font-size: 10px;
     }
 
-}
+}*/
 
-@media (max-width:750px){
+/*@media (max-width:750px){
     .estilo-neon{
+        width: 80vw;
+    }
+    .formulario label{
         width: 80%;
     }
-}
+}*/
