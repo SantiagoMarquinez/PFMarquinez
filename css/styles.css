@@ -15,6 +15,9 @@ header{
     padding-bottom: 10px;
 }
 
+.fondo {
+    background-image: url("../images/fondo-form-dark.png");
+}
 
 .contenedor-flex{
     display: flex;
@@ -59,171 +62,30 @@ header{
     font-size: 15px;
 }
 
+.cuervo {
+    margin: 10px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 1px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
 
+
+/*el club*/
+.card-club{
+    height: 40%;
+}
 
 /*futbol*/
-.contenedor-profesional {
-    display: grid;
-    width: 100%;
-    height: 95vh;
-    padding-top: 86px;
-    flex-wrap: nowrap;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 5% 23% 23% 23% 23%;
-    grid-template-areas:
-        ".........  profesion   profesion       ........."
-        "campeon33  campeon36   campeon46       campeon59"
-        "campeon68  campeon72m  campeon72n      campeon74"
-        "campeon95  campeon01   mercosur        sudamericana"
-        "campeon07  campeon13   libertadores    supercopa";
-}
-
-.profesion {
-    grid-area: profesion;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.campeon33 {
-    grid-area: campeon33;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-.campeon36 {
-    grid-area: campeon36;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.campeon46 {
-    grid-area: campeon46;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.campeon59 {
-    grid-area: campeon59;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.campeon68 {
-    grid-area: campeon68;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40%;
-}
-
-.campeon72m {
-    grid-area: campeon72m;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40%;
-}
-
-.campeon72n {
-    grid-area: campeon72n;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 40%;
-    align-items: center;
-}
-
-.campeon74 {
-    grid-area: campeon74;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.campeon95 {
-    grid-area: campeon95;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.campeon01 {
-    grid-area: campeon01;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mercosur {
-    grid-area: mercosur;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.sudamericana {
-    grid-area: sudamericana;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.campeon07 {
-    grid-area: campeon07;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.campeon13 {
-    grid-area: campeon13;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-}
-
-.libertadores {
-    grid-area: libertadores;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-}
-
-.supercopa {
-    grid-area: supercopa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-}
-
 
 .separador {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 13vh;
+    padding-top: 14vh;
     padding-bottom: 2vh;
 }
 
@@ -231,7 +93,7 @@ header{
     padding-top: 1vh;
 }
 
-.separador-tarjetas_futbol{
+.separador-tarjetas{
     padding: 13vh 1vh 0 1vw;
 }
 
@@ -251,7 +113,9 @@ header{
     height: 35vh;
 }
 
+
 .card-text {
+    font-size: smaller;
     height: 30vh;
     overflow: hidden;
 }
@@ -286,16 +150,7 @@ header{
     max-height: 50%;
 }
 
-.subtitulo {
-    background-color: rgba(17, 17, 17, 0.705);
-    border-radius: 3px;
-    border: #fdfdfea9 solid;
-    font-family: "Prompt", sans-serif, Arial, Helvetica;
-    font-size: 20px;
-    text-align: center;
-    color: bisque;
-    width: 30%;
-}
+
 
 .parrafo {
     font-family: "Prompt", sans-serif, Arial, Helvetica;
@@ -319,16 +174,7 @@ header{
     box-shadow: 2px 2px 5px white;
 }
 
-.cuervo {
-    margin: 10px;
-    border-style: solid;
-    border-radius: 50%;
-    border-color: black;
-    border-width: 1px;
-    width: 50px;
-    height: 50px;
-    display: inline-block;
-}
+
 
 .card-group>div {
     margin-top: 95px;
@@ -370,45 +216,6 @@ header{
 }
 
 
-.contenedor_club {
-    display: grid;
-    width: 100%;
-    height: 95vh;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-        "hijo1  hijo3"
-        "hijo2  hijo3";
-    gap: 1vh 1vh;
-}
-.fundacion{
-    width: 100%;
-}
-
-.hijo {
-    border-radius: 3px;
-    width: 100%;
-    height: 100%;
-}
-
-.hijo1{
-    grid-area: hijo1;
-    align-self: stretch;
-    max-height: 65vh;
-    border-radius: 5px;
-}
-
-.hijo2 {
-    grid-area: hijo2;
-    align-self: stretch;
-    max-height: 65vh;
-}
-
-.hijo3 {
-    grid-area: hijo3;
-    padding-right: 0.5vw;
-    height: 80vh;
-}
 
 .gasometros {
     width: 100%;
@@ -418,11 +225,6 @@ header{
 }
 
 /*---contacto---*/
-
-.fondo {
-    background-image: url("../images/fondo-form-dark.png");
-}
-
 
 .titulo-contacto {
     font-size: 25px;
@@ -484,7 +286,7 @@ header{
 }
 
 
-
+/*footer*/
 
 .footer {
     font-family: "Prompt", sans-serif, Arial, Helvetica;
@@ -501,29 +303,21 @@ header{
     padding-top: 5px;
 }
 
-.grid-body{
-    display: grid;
-    grid-template-columns: 1 , 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "h-nav"
-        "h-main"
-        "h-footer";
-}
-.h-nav{
-    grid-area: h-nav;
-}
+@media (max-width:580px){
+    .card-club{
+        height: 70%;
+    }
+    
+    .estilo-neon{
+        width: 90%;
+    }
 
-.h-main{
-    grid-area: h-main;
+    .contenedor-inicio{
+        display: flex;
+        flex-direction: column;
+    }
 }
-
-.h-footer{
-    grid-area: h-footer;
-}
-
-/*@media (max-width:400px){
-    .titulo-contacto{
+   /* .titulo-contacto{
         font-size: 17px;
     }
 
