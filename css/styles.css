@@ -356,6 +356,20 @@ header{
 
 /*el club*/
 
+.carousel-inner, .carousel-item, .carousel-item img{
+    height: 400px;
+    min-height: 30vh;
+    object-fit: cover;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.carousel-inner{
+    width: 50%;
+    justify-content: center;
+}
+
+
 .contenedor_club {
     display: grid;
     width: 100%;
@@ -484,6 +498,7 @@ header{
     border-radius: 5px;
     box-shadow: 2px 2px 5px white;
     padding-left: 1px;
+    padding-top: 5px;
 }
 
 .grid-body{

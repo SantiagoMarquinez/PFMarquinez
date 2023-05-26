@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <title>El Club</title>
 </head>
 
-<body class="grid-body fondo">
-    <header class="h-nav">
+<body class="fondo">
+    <header>
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <img class="cuervo" src="../images/logocuervo.jpg" alt="cuervo">
@@ -52,21 +53,11 @@
             </div>
         </nav>
     </header>
-
-    <main class="h-main pb-5">
-        <div class="separador contenedor-flex">
-            <h1 class="estilo-neon">El Club</h1>
-        </div>
-        <div class="contenedor_club"ar>
-            <div class="hijo hijo1">
-                <img class="gasometros" src="../images/gasometro.jpeg" alt="Viejo Gasometro">
-            </div>
-            <div class="hijo hijo2">
-                <img class="gasometros" src="../images/nuevoGasometro.jpg" alt="Nuevo Gasometro">
-            </div>
-            <div class="hijo hijo3">
-                <h2 class="estilo-neon fundacion">
-                    Fundación
+    <main>
+        <section class="d-flex flex-column justify-content-center">
+            <div class="separador d-flex flex-column justify-content-center align-items-center">
+                <h2 class="estilo-neon">
+                    FUNDACIóN
                 </h2>
                 <p class="parrafo">
                     A principios de 1907, un grupo de jóvenes entusiastas liderados por Federico Monti y Antonio
@@ -82,39 +73,52 @@
                     practicaran deportes a cambio de asegurar su presencia en la misa los domingos. Así, el 1° de abril
                     de
                     1908, luego de una asamblea extraordinaria, el club pasó a llamarse San Lorenzo de Almagro.
-                    El Viejo Gasómetro
-                    Se inauguró hace un siglo, en aquel 1916 que tenía al mundo en guerra, a Albert Einstein publicando
-                    su Teoría de la Relatividad y a Hipólito Yrigoyen gobernando a la Argentina. El Gasómetro de Avenida
-                    La Plata no tardaría en convertirse en uno de los estadios más importantes del país: cuerpo de
-                    madera, corazón de hierro y alma generosa, popular, de Boedo y todo el cielo, un coloso que podía
-                    albergar más de 75.000 espectadores. Símbolo del barrio, tuvo su bautismo futbolero el 7 de mayo de
-                    aquel año, cuando San Lorenzo venció 2-1 a Estudiantes. Leyendas como Jacobo Urso, Federico Monti y
-                    Luis Gianella jugaron esa tarde. El Gasómetro (apodo que sustituyó todo nombre oficial y cuyo origen
-                    tiene que ver con su similitud con los depósitos de gas de aquel tiempo) fue sede de la Copa América
-                    en sus ediciones de 1929, 1937 y 1946. En su césped brillaron equipos legendarios, como el de
-                    Farro-Pontoni-Martino, los Pistoleros del 59, los Carasucias y Los Matadores de los 60’s, el
-                    bicampeón del 72, y a su alrededor vibró el deporte en su totalidad, además de los carnavales de
-                    tango y jazz, los recitales inolvidables (desde Carlos Santana hasta Sandro) y el ingenio
-                    incomparable de la Gloriosa hinchada de San Lorenzo, que compuso sobre sus tablones los primeros
-                    hits del fútbol nacional. Su último partido allí se jugó en 1979 (empate sin goles ante Boca) y el
-                    sueño latente es que, en poco tiempo, la pelota vuelva a rodar en ese predio. “Vamos a volver”,
-                    promete el pueblo sanlorencista. Y así será, para emoción de millones alrededor del mundo.
-
-
                 </p>
             </div>
-        </div>
- 
+        </section>
+        <section class="d-flex justify-content-center w-50 contenedor">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade w-100 ">
+                <div class="carousel-inner w-100 justify-content-center">
+                    <div class="carousel-item active">
+                        <img src="../images/gasometro.jpeg" class="d-block w-100 carousel-img" alt="viejo gasometro">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/car-Viejo-gasometro-afuera.jpg" class="d-block w-100 carousel-img"
+                            alt="lateral viejo gasometro">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/car-vg-hinchada.jpg" class="d-block w-100 carousel-img"
+                            alt="hinchada en viejo gasometro">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/car-ng-final-libertadores.jpg" class="d-block w-100 carousel-img"
+                            alt="mosaico por la gloria">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/car-fuegos-ng.jpg" class="d-block w-100 carousel-img"
+                            alt="pirotecnia libertadores">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Atras</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Adelante</span>
+                </button>
+            </div>
+        </section>
+
     </main>
-    
-    <footer class="h-footer">
+    <footer>
         <h3 class="footer"> Con el alma en Boedo - cuervopedia@gmail.com - Cuervopedia©</h3>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         </script>
-
 </body>
 
 </html>
