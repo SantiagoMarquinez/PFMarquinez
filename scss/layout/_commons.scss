@@ -1,0 +1,45 @@
+header{
+    padding-bottom: 10px;
+}
+
+.fondo {
+    background-image: url("../images/fondo-form-dark.png");
+}
+
+.contenedor-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.estilo-neon{
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    margin: 2px;
+    background-color: rgba(17, 17, 17, 0.705);
+    text-align: center;
+    color: bisque;
+    width: 30%;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+}
+
+.parrafo {
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    margin: 2px 1%;
+    
+    background-color: rgba(17, 17, 17, 0.705);
+    text-align: center;
+    color: bisque;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+}
+
+.card {
+    width: 100%;
+    color: bisque;
+    background-color: rgba(0, 0, 0, 0.459) ;
+}

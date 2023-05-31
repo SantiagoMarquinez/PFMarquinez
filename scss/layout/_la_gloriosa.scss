@@ -1,0 +1,38 @@
+
+.tarjeta-gloriosa{
+    max-width: 25%;
+    height: 100%;
+}
+
+.card-text{
+    font-family: "Prompt";
+    height: 30%;
+}
+
+.card-body a {
+    background-color:rgba(128, 128, 128, 0.788);
+    border-top:none;
+    border-left:none;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+    &:hover{
+        background-color:rgba(128, 128, 128, 0.788);
+        border:none;
+    }
+}
+
+.tarjeta-gloriosa img{
+    object-fit: cover;
+    max-height: 50%;
+}
+
+.neon-w100{
+    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    margin: 2px;
+    background-color: rgba(17, 17, 17, 0.705);
+    text-align: center;
+    color: bisque;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+}

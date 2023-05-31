@@ -1,0 +1,39 @@
+.contenedor-bandera{
+    display: grid;
+    grid-template-columns: 4,1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "h-bandera    h-bandera         h-historia1    h-historia1"
+        "h-bandera    h-bandera         h-historia1    h-historia1";
+    width: 100%;
+    height: 600px;
+}
+
+
+
+.h-bandera{
+    grid-area: h-bandera;
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+}
+
+.h-historia1{
+    display: flex;
+    flex-direction: column;
+    grid-area: h-historia1;
+    width: auto;
+    align-content: center;
+}
+
+
+.h-historia2{
+
+    grid-area: h-historia2;
+    width: auto;
+}

@@ -1,4 +1,3 @@
-/*font-family:  prompt, sans-serif, Arial, Helvetica;*/
 @font-face {
   font-family: "Prompt";
   src: url(../assets/Prompt-SemiBold.ttf);
@@ -13,6 +12,7 @@ body {
   max-width: 99vw;
 }
 
+/*estilos compartidos*/
 header {
   padding-bottom: 10px;
 }
@@ -41,6 +41,23 @@ header {
   box-shadow: 2px 2px 5px white;
 }
 
+.parrafo {
+  font-family: "Prompt", sans-serif, Arial, Helvetica;
+  margin: 2px 1%;
+  background-color: rgba(17, 17, 17, 0.705);
+  text-align: center;
+  color: bisque;
+  border: 1px solid rgba(128, 128, 128, 0.788);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px white;
+}
+
+.card {
+  width: 100%;
+  color: bisque;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
 /*barra de navegacion*/
 .navegacion {
   padding-bottom: 30px;
@@ -51,7 +68,6 @@ header {
   font-size: 30px;
   font-family: "Prompt";
   padding: 0px;
-  background-color: #2a4664;
 }
 
 .titulo-header {
@@ -91,6 +107,19 @@ header {
   height: 40%;
 }
 
+.card-group > div {
+  margin-top: 95px;
+  padding: 2px;
+}
+
+.videoindex {
+  border: none;
+  background-color: bisque;
+  width: 100%;
+  height: 300px;
+  padding: 0%;
+}
+
 /*el club*/
 .contenedor-bandera {
   display: grid;
@@ -106,7 +135,6 @@ header {
   width: 100%;
   height: 100%;
 }
-
 .h-bandera img {
   width: 100%;
   height: 100%;
@@ -148,7 +176,6 @@ header {
   min-height: 70vh;
   overflow: hidden;
 }
-
 .card:hover {
   box-shadow: 2px 2px 5px white;
 }
@@ -183,7 +210,6 @@ header {
   border-right: solid 2px white;
   border-bottom: solid 2px white;
 }
-
 .card-body a:hover {
   background-color: rgba(128, 128, 128, 0.788);
   border: none;
@@ -192,17 +218,6 @@ header {
 .tarjeta-gloriosa img {
   object-fit: cover;
   max-height: 50%;
-}
-
-.parrafo {
-  font-family: "Prompt", sans-serif, Arial, Helvetica;
-  margin: 2px 1%;
-  background-color: rgba(17, 17, 17, 0.705);
-  text-align: center;
-  color: bisque;
-  border: 1px solid rgba(128, 128, 128, 0.788);
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px white;
 }
 
 .neon-w100 {
@@ -214,25 +229,6 @@ header {
   border: 1px solid rgba(128, 128, 128, 0.788);
   border-radius: 5px;
   box-shadow: 2px 2px 5px white;
-}
-
-.card-group > div {
-  margin-top: 95px;
-  padding: 2px;
-}
-
-.card {
-  width: 100%;
-  color: bisque;
-  background-color: rgba(0, 0, 0, 0.459);
-}
-
-.videoindex {
-  border: none;
-  background-color: bisque;
-  width: 100%;
-  height: 300px;
-  padding: 0%;
 }
 
 /*---contacto---*/
@@ -256,7 +252,6 @@ header {
   display: flex;
   flex-direction: column;
 }
-
 .formulario label {
   font-family: "Prompt", sans-serif, Arial, Helvetica;
   color: bisque;
@@ -265,7 +260,6 @@ header {
   box-shadow: 2px 2px 5px white;
   border-radius: 5px;
 }
-
 .formulario input {
   color: bisque;
   width: 100%;
@@ -274,7 +268,6 @@ header {
   box-shadow: 2px 2px 5px white;
   background-color: transparent;
 }
-
 .formulario textarea {
   color: bisque;
   border: 1px solid rgba(128, 128, 128, 0.788);
@@ -282,7 +275,6 @@ header {
   background-color: transparent;
   box-shadow: 2px 2px 5px white;
 }
-
 .formulario button {
   margin-top: 2px;
   background-color: rgba(128, 128, 128, 0.788);
@@ -311,6 +303,7 @@ header {
   padding-top: 5px;
 }
 
+/*responsive*/
 @media (max-width: 580px) {
   .card-club {
     height: 70%;

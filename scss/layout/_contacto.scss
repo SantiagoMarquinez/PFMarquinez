@@ -1,0 +1,53 @@
+.titulo-contacto {
+    font-size: 25px;
+    padding: 10px;   
+}
+
+.parrafo-contacto {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.formulario {
+    width: 55%;
+    height: 30%;
+    background-position: top center;
+    margin: 1px auto;
+    padding: 2px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    label{
+        font-family: "Prompt", sans-serif, Arial, Helvetica;
+        color: bisque;
+        font-weight: lighter;
+        display: block;
+        box-shadow: 2px 2px 5px white;
+        border-radius: 5px;
+    }
+    input {
+        color: bisque;
+        width: 100%;
+        border: 1px solid rgba(128, 128, 128, 0.788);
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px white;
+        background-color: transparent;
+    }
+    textarea {
+        color: bisque;
+        border: 1px solid rgba(128, 128, 128, 0.788);
+        border-radius: 5px;
+        background-color: transparent;
+        box-shadow: 2px 2px 5px white;
+    }
+    button {
+        margin-top: 2px;
+        background-color: rgba(128, 128, 128, 0.788);
+        border: 1px solid rgba(128, 128, 128, 0.788);
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px white;
+        align-items: center;
+        color: bisque;
+    }
+
+}
