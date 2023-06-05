@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Prompt";
-  src: url(../assets/Prompt-SemiBold.ttf);
+  src: url(../assets/JosefinSans-Regular.ttf);
+  font-family: "Josefin";
 }
 * {
   margin: 0;
@@ -24,13 +24,22 @@ header {
 .contenedor-flex {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.contenedor-flex-row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
 
 .estilo-neon {
-  font-family: "Prompt", sans-serif, Arial, Helvetica;
+  font-family: "Josefin";
   margin: 2px;
   background-color: rgba(17, 17, 17, 0.705);
   text-align: center;
@@ -42,7 +51,7 @@ header {
 }
 
 .parrafo {
-  font-family: "Prompt", sans-serif, Arial, Helvetica;
+  font-family: "Josefin";
   margin: 2px 1%;
   background-color: rgba(17, 17, 17, 0.705);
   text-align: center;
@@ -56,27 +65,61 @@ header {
   width: 100%;
   color: bisque;
   background-color: rgba(0, 0, 0, 0.459);
+  max-height: 70vh;
+  min-height: 70vh;
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: 2px 2px 5px white;
+}
+
+.card-img-top {
+  object-fit: cover;
+  min-height: 35vh;
+  height: 35vh;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  font-family: "Josefin";
+  font-size: small;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.separador {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 14vh;
+  padding-bottom: 2vh;
+}
+
+.separador-top {
+  padding-top: 1vh;
 }
 
 /*barra de navegacion*/
 .navegacion {
   padding-bottom: 30px;
-  background-color: #ea2731;
 }
 
 .hamburguesa {
   font-size: 30px;
-  font-family: "Prompt";
+  font-family: "Josefin";
   padding: 0px;
 }
 
 .titulo-header {
-  font-family: "Prompt";
+  font-family: "Josefin";
   font-size: 30px;
 }
 
 .titulo-menunav {
-  font-family: "Prompt";
+  font-family: "Josefin";
   font-size: 15px;
 }
 
@@ -155,52 +198,14 @@ header {
 }
 
 /*futbol*/
-.separador {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  padding-top: 14vh;
-  padding-bottom: 2vh;
-}
-
-.separador-top {
-  padding-top: 1vh;
-}
-
+/*la gloriosa*/
 .separador-tarjetas {
   padding: 13vh 1vh 0 1vw;
 }
 
-.card {
-  max-height: 70vh;
-  min-height: 70vh;
-  overflow: hidden;
-}
-.card:hover {
-  box-shadow: 2px 2px 5px white;
-}
-
-.card-img-top {
-  object-fit: cover;
-  min-height: 35vh;
-  height: 35vh;
-}
-
-.card-text {
-  font-size: smaller;
-  height: 30vh;
-  overflow: hidden;
-}
-
-/*la gloriosa*/
 .tarjeta-gloriosa {
   max-width: 25%;
   height: 100%;
-}
-
-.card-text {
-  font-family: "Prompt";
-  height: 30%;
 }
 
 .card-body a {
@@ -221,7 +226,7 @@ header {
 }
 
 .neon-w100 {
-  font-family: "Prompt", sans-serif, Arial, Helvetica;
+  font-family: "Josefin";
   margin: 2px;
   background-color: rgba(17, 17, 17, 0.705);
   text-align: center;
@@ -253,7 +258,7 @@ header {
   flex-direction: column;
 }
 .formulario label {
-  font-family: "Prompt", sans-serif, Arial, Helvetica;
+  font-family: "Josefin";
   color: bisque;
   font-weight: lighter;
   display: block;
@@ -289,7 +294,7 @@ header {
 .footer {
   display: flex;
   justify-content: center;
-  font-family: "Prompt", sans-serif, Arial, Helvetica;
+  font-family: "Josefin";
   margin: 2px;
   background-color: rgba(17, 17, 17, 0.705);
   text-align: center;
@@ -314,6 +319,12 @@ header {
   .contenedor-inicio {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 790) {
+  .d-flex {
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }
 

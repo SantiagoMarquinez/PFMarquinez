@@ -12,3 +12,10 @@
         flex-direction: column;
     }
 }
+
+@media (max-width:790){
+    .d-flex{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

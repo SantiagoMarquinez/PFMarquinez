@@ -1,8 +1,8 @@
 /*font-family:  prompt, sans-serif, Arial, Helvetica;*/
 
 @font-face {
-    font-family: "Prompt";
-    src: url(../assets/Prompt-SemiBold.ttf);
+    font-family: "Josefin";
+    src: url(../assets/JosefinSans-Regular.ttf);
 }
 
 * {

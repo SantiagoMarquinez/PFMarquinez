@@ -9,13 +9,22 @@ header{
 .contenedor-flex{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contenedor-flex-row{
+    display: flex;
+    flex-direction:row;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
 .estilo-neon{
-    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    font-family: $main-font;
     margin: 2px;
     background-color: rgba(17, 17, 17, 0.705);
     text-align: center;
@@ -27,7 +36,7 @@ header{
 }
 
 .parrafo {
-    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    font-family: $main-font;
     margin: 2px 1%;
     
     background-color: rgba(17, 17, 17, 0.705);
@@ -38,8 +47,44 @@ header{
     box-shadow: 2px 2px 5px white;
 }
 
-.card {
+
+.card{
     width: 100%;
     color: bisque;
-    background-color: rgba(0, 0, 0, 0.459) ;
+    background-color: rgba(0, 0, 0, 0.459);
+    max-height: 70vh;
+    min-height: 70vh;
+    overflow: hidden;
+    &:hover{
+        box-shadow: 2px 2px 5px white;
+    }
+}
+
+.card-img-top {
+    object-fit: cover;
+    min-height: 35vh;
+    height: 35vh;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text {
+    font-family: $main-font;
+    font-size: small;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.separador {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 14vh;
+    padding-bottom: 2vh;
+}
+
+.separador-top{
+    padding-top: 1vh;
 }

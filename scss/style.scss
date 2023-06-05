@@ -1,5 +1,7 @@
 @import "base/resets";
 
+@import "base/variables";
+
 /*estilos compartidos*/
 @import"layout/commons";
 
@@ -25,5 +27,5 @@
 /*footer*/
 @import "components/footer";
 
-/*responsive*/
- @import "base/querys";
+/*responsive*/ 
+ @import "layout/queries";

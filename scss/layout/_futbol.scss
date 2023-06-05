@@ -1,37 +1,7 @@
-.separador {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 14vh;
-    padding-bottom: 2vh;
-}
-
-.separador-top{
-    padding-top: 1vh;
-}
-
-.separador-tarjetas{
-    padding: 13vh 1vh 0 1vw;
-}
-
-.card{
-    max-height: 70vh;
-    min-height: 70vh;
-    overflow: hidden;
-    &:hover{
-        box-shadow: 2px 2px 5px white;
-    }
-}
-
-.card-img-top {
-    object-fit: cover;
-    min-height: 35vh;
-    height: 35vh;
-}
 
 
-.card-text {
-    font-size: smaller;
-    height: 30vh;
-    overflow: hidden;
-}
+
+
+
+
+

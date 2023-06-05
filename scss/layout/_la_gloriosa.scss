@@ -1,12 +1,10 @@
+.separador-tarjetas{
+    padding: 13vh 1vh 0 1vw;
+}
 
 .tarjeta-gloriosa{
     max-width: 25%;
     height: 100%;
-}
-
-.card-text{
-    font-family: "Prompt";
-    height: 30%;
 }
 
 .card-body a {
@@ -27,7 +25,7 @@
 }
 
 .neon-w100{
-    font-family: "Prompt", sans-serif, Arial, Helvetica;
+    font-family: $main-font;
     margin: 2px;
     background-color: rgba(17, 17, 17, 0.705);
     text-align: center;
