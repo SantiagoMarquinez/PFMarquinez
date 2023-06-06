@@ -1,0 +1,21 @@
+//extend
+.neon-w100{
+    font-family: $main-font;
+    margin: 2px;
+    background-color: rgba(17, 17, 17, 0.705);
+    text-align: center;
+    color: bisque;
+    border: 1px solid rgba(128, 128, 128, 0.788);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px white;
+}
+
+//mixin
+@mixin cont-flex ($direction,$wrap,$justify,$acontent,$aitem){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-content: $acontent;
+    align-items: $aitem;
+}

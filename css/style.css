@@ -12,6 +12,17 @@ body {
   max-width: 99vw;
 }
 
+.neon-w100, .estilo-neon {
+  font-family: "Josefin";
+  margin: 2px;
+  background-color: rgba(17, 17, 17, 0.705);
+  text-align: center;
+  color: bisque;
+  border: 1px solid rgba(128, 128, 128, 0.788);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px white;
+}
+
 /*estilos compartidos*/
 header {
   padding-bottom: 10px;
@@ -33,21 +44,14 @@ header {
 .contenedor-flex-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
 
 .estilo-neon {
-  font-family: "Josefin";
-  margin: 2px;
-  background-color: rgba(17, 17, 17, 0.705);
-  text-align: center;
-  color: bisque;
   width: 30%;
-  border: 1px solid rgba(128, 128, 128, 0.788);
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px white;
 }
 
 .parrafo {
@@ -155,46 +159,38 @@ header {
   padding: 2px;
 }
 
-.videoindex {
-  border: none;
-  background-color: bisque;
-  width: 100%;
-  height: 300px;
-  padding: 0%;
+.separador-resp {
+  padding-top: 5vh;
+}
+
+.contenedor-inicio {
+  gap: 5px;
 }
 
 /*el club*/
 .contenedor-bandera {
   display: grid;
-  grid-template-columns: 4, 1fr;
+  grid-template-columns: 1, 1fr;
   grid-template-rows: auto;
   grid-template-areas: "h-bandera    h-bandera         h-historia1    h-historia1" "h-bandera    h-bandera         h-historia1    h-historia1";
   width: 100%;
-  height: 600px;
 }
-
-.h-bandera {
+.contenedor-bandera .h-bandera {
   grid-area: h-bandera;
   width: 100%;
-  height: 100%;
 }
-.h-bandera img {
+.contenedor-bandera .h-bandera img {
   width: 100%;
-  height: 100%;
+  min-width: 50vw;
+  height: 70vh;
   border-radius: 5px;
 }
-
-.h-historia1 {
+.contenedor-bandera .h-historia1 {
   display: flex;
   flex-direction: column;
   grid-area: h-historia1;
   width: auto;
   align-content: center;
-}
-
-.h-historia2 {
-  grid-area: h-historia2;
-  width: auto;
 }
 
 /*futbol*/
@@ -207,6 +203,10 @@ header {
   max-width: 25%;
   height: 100%;
 }
+.tarjeta-gloriosa img {
+  object-fit: cover;
+  max-height: 50%;
+}
 
 .card-body a {
   background-color: rgba(128, 128, 128, 0.788);
@@ -218,25 +218,7 @@ header {
 .card-body a:hover {
   background-color: rgba(128, 128, 128, 0.788);
   border: none;
-}
-
-.tarjeta-gloriosa img {
-  object-fit: cover;
-  max-height: 50%;
-}
-
-.neon-w100 {
-  font-family: "Josefin";
-  margin: 2px;
-  background-color: rgba(17, 17, 17, 0.705);
-  text-align: center;
-  color: bisque;
-  border: 1px solid rgba(128, 128, 128, 0.788);
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px white;
-}
-
-/*---contacto---*/
+} /*---contacto---*/
 .titulo-contacto {
   font-size: 25px;
   padding: 10px;
