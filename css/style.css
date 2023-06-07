@@ -67,14 +67,18 @@ header {
 
 .card {
   width: 100%;
-  color: bisque;
+  color: #ffe5c4;
   background-color: rgba(0, 0, 0, 0.459);
   max-height: 70vh;
   min-height: 70vh;
   overflow: hidden;
+  transition: transform 1s;
 }
 .card:hover {
   box-shadow: 2px 2px 5px white;
+  transform: scale(1.2);
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.863);
 }
 
 .card-img-top {
@@ -167,6 +171,47 @@ header {
   gap: 5px;
 }
 
+.tilt-in-fwd-tr {
+  -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.card1 {
+  animation-delay: 0.5s;
+}
+
+.card2 {
+  animation-delay: 1s;
+}
+
+.card3 {
+  animation-delay: 1.5s;
+}
+
+@-webkit-keyframes tilt-in-fwd-tr {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-fwd-tr {
+  0% {
+    -webkit-transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
 /*el club*/
 .contenedor-bandera {
   display: grid;
@@ -194,6 +239,11 @@ header {
 }
 
 /*futbol*/
+.internacional:hover {
+  color: #222222;
+  background-color: #daa520;
+}
+
 /*la gloriosa*/
 .separador-tarjetas {
   padding: 13vh 1vh 0 1vw;

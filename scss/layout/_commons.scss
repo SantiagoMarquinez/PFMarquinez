@@ -35,15 +35,20 @@ header{
 
 .card{
     width: 100%;
-    color: bisque;
-    background-color: rgba(0, 0, 0, 0.459);
+    color: #ffe5c4;
+    background-color: $fondo-tarjetas;
     max-height: 70vh;
     min-height: 70vh;
     overflow: hidden;
+    transition: transform 1s;
     &:hover{
         box-shadow: 2px 2px 5px white;
+        transform: scale(1.2);
+        z-index: 100;
+        background-color:$fondo-tarjetas-hover;
+        }
     }
-}
+
 
 .card-img-top {
     object-fit: cover;
