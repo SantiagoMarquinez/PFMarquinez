@@ -213,22 +213,38 @@ header {
   }
 }
 /*el club*/
+.title-bandera {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.title-bandera h3 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
 .contenedor-bandera {
   display: grid;
-  grid-template-columns: 1, 1fr;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "h-bandera    h-bandera         h-historia1    h-historia1" "h-bandera    h-bandera         h-historia1    h-historia1";
+  grid-template-areas: "h-bandera  h-historia1";
   width: 100%;
 }
 .contenedor-bandera .h-bandera {
   grid-area: h-bandera;
   width: 100%;
+  align-self: flex-start;
 }
 .contenedor-bandera .h-bandera img {
   width: 100%;
   min-width: 50vw;
-  height: 70vh;
+  height: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 .contenedor-bandera .h-historia1 {
   display: flex;
@@ -353,10 +369,49 @@ header {
     flex-direction: column;
   }
 }
-@media (max-width: 790) {
+@media (max-width: 790px) {
   .d-flex {
     flex-direction: column;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 1200px) {
+  .contenedor-bandera {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "h-bandera" "h-historia1";
+    width: 100%;
+    align-content: start;
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .contenedor-bandera .h-bandera {
+    grid-area: h-bandera;
+    width: 100%;
+    align-self: flex-end;
+  }
+  .contenedor-bandera .h-bandera img {
+    width: 100%;
+    min-width: 50vw;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  .contenedor-bandera .h-historia1 {
+    display: flex;
+    flex-direction: column;
+    grid-area: h-historia1;
+    width: auto;
+    align-content: center;
+  }
+}
+@media (max-width: 1100px) {
+  .card-img-top {
+    object-fit: contain;
+    min-height: 35vh;
+    height: 35vh;
   }
 }
 

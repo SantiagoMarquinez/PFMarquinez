@@ -1,19 +1,30 @@
+.title-bandera{
+    @include cont-flex(row,nowrap,center,center,center);  
+    padding-bottom: 5px;
+    h3{
+        font-size: calc(1.375rem + 1.5vw);;
+    }
+    
+}
+
 .contenedor-bandera{
     display: grid;
-    grid-template-columns: 1,1fr;
+    gap:5px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "h-bandera    h-bandera         h-historia1    h-historia1"
-        "h-bandera    h-bandera         h-historia1    h-historia1";
+        "h-bandera  h-historia1";
     width: 100%;
     .h-bandera{
         grid-area: h-bandera;
         width: 100%;
+        align-self:flex-start;
         img{
             width: 100%;
             min-width: 50vw;
-            height: 70vh;
+            height: 100%;
             border-radius: 5px;
+            object-fit: cover;
         }
     }
     .h-historia1{
@@ -24,9 +35,4 @@
         align-content: center;
     }
 }
-
-
-
-
-
 
