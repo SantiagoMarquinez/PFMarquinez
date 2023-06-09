@@ -306,36 +306,37 @@ header {
   flex-direction: column;
 }
 .formulario label {
-  font-family: "Josefin";
+  box-shadow: 2px 2px 5px white;
+  border-radius: 5px;
   color: bisque;
+  background-color: none;
+  font-family: "Josefin";
   font-weight: lighter;
   display: block;
-  box-shadow: 2px 2px 5px white;
-  border-radius: 5px;
 }
 .formulario input {
-  color: bisque;
-  width: 100%;
-  border: 1px solid rgba(128, 128, 128, 0.788);
-  border-radius: 5px;
   box-shadow: 2px 2px 5px white;
+  border-radius: 5px;
+  color: bisque;
   background-color: transparent;
+  width: 100%;
 }
 .formulario textarea {
-  color: bisque;
-  border: 1px solid rgba(128, 128, 128, 0.788);
-  border-radius: 5px;
-  background-color: transparent;
   box-shadow: 2px 2px 5px white;
+  border-radius: 5px;
+  color: bisque;
+  background-color: transparent;
+  border: 1px solid rgba(128, 128, 128, 0.788);
 }
 .formulario button {
+  box-shadow: 2px 2px 5px white;
+  border-radius: 5px;
+  color: bisque;
+  background-color: rgba(128, 128, 128, 0.788);
   margin-top: 2px;
   background-color: rgba(128, 128, 128, 0.788);
   border: 1px solid rgba(128, 128, 128, 0.788);
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px white;
   align-items: center;
-  color: bisque;
 }
 
 /*footer*/
@@ -361,6 +362,11 @@ header {
   .card-club {
     height: 70%;
   }
+  .card-img-top {
+    object-fit: cover;
+    min-height: 35vh;
+    height: 35vh;
+  }
   .estilo-neon {
     width: 90%;
   }
@@ -380,7 +386,7 @@ header {
     display: grid;
     gap: 5px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas: "h-bandera" "h-historia1";
     width: 100%;
     align-content: start;

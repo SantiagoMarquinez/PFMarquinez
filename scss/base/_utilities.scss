@@ -19,3 +19,10 @@
     align-content: $acontent;
     align-items: $aitem;
 }
+
+@mixin sombra ($shadow, $radius, $color, $back){
+    box-shadow: $shadow;
+    border-radius: $radius;
+    color: $color;
+    background-color:$back;
+}

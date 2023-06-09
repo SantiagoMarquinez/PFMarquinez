@@ -2,6 +2,11 @@
     .card-club{
         height: 70%;
     }
+    .card-img-top {
+        object-fit:cover;
+        min-height: 35vh;
+        height: 35vh;
+    }
     
     .estilo-neon{
         width: 90%;
@@ -25,7 +30,7 @@
         display: grid;
         gap:5px;
         grid-template-columns:1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto 1fr;
         grid-template-areas: 
             "h-bandera"  
             "h-historia1";

@@ -18,36 +18,26 @@
     display: flex;
     flex-direction: column;
     label{
+        @include sombra (2px 2px 5px white, 5px, bisque, none);
         font-family: $main-font;
-        color: bisque;
         font-weight: lighter;
         display: block;
-        box-shadow: 2px 2px 5px white;
-        border-radius: 5px;
     }
     input {
-        color: bisque;
+        @include sombra (2px 2px 5px white, 5px, bisque, transparent);
         width: 100%;
-        border: 1px solid rgba(128, 128, 128, 0.788);
-        border-radius: 5px;
-        box-shadow: 2px 2px 5px white;
-        background-color: transparent;
     }
     textarea {
-        color: bisque;
+        @include sombra (2px 2px 5px white, 5px, bisque, transparent);
         border: 1px solid rgba(128, 128, 128, 0.788);
-        border-radius: 5px;
-        background-color: transparent;
-        box-shadow: 2px 2px 5px white;
     }
     button {
+        @include sombra (2px 2px 5px white, 5px, bisque,rgba(128, 128, 128, 0.788) );
         margin-top: 2px;
         background-color: rgba(128, 128, 128, 0.788);
         border: 1px solid rgba(128, 128, 128, 0.788);
-        border-radius: 5px;
-        box-shadow: 2px 2px 5px white;
         align-items: center;
-        color: bisque;
+
     }
 
 }
