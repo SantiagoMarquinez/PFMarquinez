@@ -1,6 +1,7 @@
 @font-face {
   src: url(../assets/JosefinSans-Regular.ttf);
   font-family: "Josefin";
+  font-display: swap;
 }
 * {
   margin: 0;
