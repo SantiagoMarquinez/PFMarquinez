@@ -23,13 +23,10 @@ header{
 .parrafo {
     font-family: $main-font;
     margin: 2px 1%;
-    
-    background-color: rgba(17, 17, 17, 0.705);
+    @include sombra(2px 2px 5px white, 5px,bisque,rgba(17, 17, 17, 0.705));
     text-align: center;
     color: bisque;
     border: 1px solid rgba(128, 128, 128, 0.788);
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px white;
 }
 
 
