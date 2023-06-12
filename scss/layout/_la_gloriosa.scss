@@ -12,13 +12,13 @@
 }
 
 .card-body a {
-    background-color:rgba(128, 128, 128, 0.788);
+    background-color:$gris-translucido;
     border-top:none;
     border-left:none;
     border-right: solid 2px white;
     border-bottom: solid 2px white;
     &:hover{
-        background-color:rgba(128, 128, 128, 0.788);
+        background-color:$boton-tarjeta;
         border:none;
     }
 }

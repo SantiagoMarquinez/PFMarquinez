@@ -13,7 +13,7 @@ body {
   max-width: 99vw;
 }
 
-.neon-w100, .estilo-neon {
+.neon-w100, .footer, .estilo-neon {
   font-family: "Josefin";
   margin: 2px;
   background-color: rgba(17, 17, 17, 0.705);
@@ -217,15 +217,8 @@ header {
 }
 /*el club*/
 .title-bandera {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  font-family: "Josefin";
   padding-bottom: 5px;
-}
-.title-bandera h3 {
   font-size: calc(1.375rem + 1.5vw);
 }
 
@@ -346,18 +339,8 @@ header {
 .footer {
   display: flex;
   justify-content: center;
-  font-family: "Josefin";
-  margin: 2px;
-  background-color: rgba(17, 17, 17, 0.705);
-  text-align: center;
-  color: bisque;
   font-size: medium;
-  width: 97%;
-  border: 1px solid rgba(128, 128, 128, 0.788);
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px white;
-  padding-left: 1px;
-  padding-top: 5px;
+  width: 100%;
 }
 
 /*responsive*/

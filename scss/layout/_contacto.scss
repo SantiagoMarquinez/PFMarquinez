@@ -29,13 +29,13 @@
     }
     textarea {
         @include sombra (2px 2px 5px white, 5px, bisque, transparent);
-        border: 1px solid rgba(128, 128, 128, 0.788);
+        border: 1px solid $gris-translucido;
     }
     button {
-        @include sombra (2px 2px 5px white, 5px, bisque,rgba(128, 128, 128, 0.788) );
+        @include sombra (2px 2px 5px white, 5px, bisque,$gris-translucido );
         margin-top: 2px;
-        background-color: rgba(128, 128, 128, 0.788);
-        border: 1px solid rgba(128, 128, 128, 0.788);
+        background-color: $gris-translucido;
+        border: 1px solid $gris-translucido;
         align-items: center;
 
     }

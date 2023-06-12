@@ -1,11 +1,9 @@
 .title-bandera{
-    @include cont-flex(row,nowrap,center,center,center);  
+    font-family: $main-font ;
     padding-bottom: 5px;
-    h3{
-        font-size: calc(1.375rem + 1.5vw);;
+    font-size: calc(1.375rem + 1.5vw);
     }
     
-}
 
 .contenedor-bandera{
     display: grid;
