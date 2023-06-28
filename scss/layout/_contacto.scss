@@ -13,22 +13,22 @@
     height: 30%;
     background-position: top center;
     margin: 1px auto;
-    padding: 2px;
+    padding: 5px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     label{
-        @include sombra (2px 2px 5px white, 5px, bisque, none);
+        color:white;
         font-family: $main-font;
         font-weight: lighter;
         display: block;
     }
     input {
-        @include sombra (2px 2px 5px white, 5px, bisque, transparent);
+        @include sombra (2px 2px 5px white, 5px, bisque, white);
         width: 100%;
     }
     textarea {
-        @include sombra (2px 2px 5px white, 5px, bisque, transparent);
+        @include sombra (2px 2px 5px white, 5px, bisque, white);
         border: 1px solid $gris-translucido;
     }
     button {

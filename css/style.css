@@ -79,7 +79,8 @@ header {
 }
 .card:hover {
   box-shadow: 2px 2px 5px white;
-  transform: scale(1.2);
+  transition: 1s;
+  transform: scale(1.1);
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.863);
 }
@@ -96,7 +97,7 @@ header {
 
 .card-text {
   font-family: "Josefin";
-  font-size: small;
+  font-size: medium;
   height: 30vh;
   overflow: hidden;
 }
@@ -106,7 +107,7 @@ header {
   justify-content: center;
   align-content: center;
   padding-top: 14vh;
-  padding-bottom: 2vh;
+  padding-bottom: 4vh;
 }
 
 .separador-top {
@@ -162,7 +163,7 @@ header {
 }
 
 .card-group > div {
-  margin-top: 95px;
+  margin-top: 20px;
   padding: 2px;
 }
 
@@ -176,7 +177,7 @@ header {
 
 .tilt-in-fwd-tr {
   -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-fwd-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .card1 {
@@ -251,6 +252,13 @@ header {
 }
 
 /*futbol*/
+.card-text-fut {
+  font-family: "Josefin";
+  font-size: 13px;
+  height: 30vh;
+  overflow: hidden;
+}
+
 .internacional:hover {
   color: #222222;
   background-color: #daa520;
@@ -296,16 +304,13 @@ header {
   height: 30%;
   background-position: top center;
   margin: 1px auto;
-  padding: 2px;
+  padding: 5px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
 }
 .formulario label {
-  box-shadow: 2px 2px 5px white;
-  border-radius: 5px;
-  color: bisque;
-  background-color: none;
+  color: white;
   font-family: "Josefin";
   font-weight: lighter;
   display: block;
@@ -314,14 +319,14 @@ header {
   box-shadow: 2px 2px 5px white;
   border-radius: 5px;
   color: bisque;
-  background-color: transparent;
+  background-color: white;
   width: 100%;
 }
 .formulario textarea {
   box-shadow: 2px 2px 5px white;
   border-radius: 5px;
   color: bisque;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid rgba(128, 128, 128, 0.788);
 }
 .formulario button {

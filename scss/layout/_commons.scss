@@ -40,7 +40,8 @@ header{
     transition: transform 1s;
     &:hover{
         box-shadow: 2px 2px 5px white;
-        transform: scale(1.2);
+        transition: 1s;
+        transform: scale(1.1);
         z-index: 100;
         background-color:$fondo-tarjetas-hover;
         }
@@ -59,9 +60,9 @@ header{
 
 .card-text {
     font-family: $main-font;
-    font-size: small;
+    font-size: medium;
     height: 30vh;
-    overflow: hidden;
+    overflow: hidden;    
 }
 
 .separador {
@@ -69,7 +70,7 @@ header{
     justify-content: center;
     align-content: center;
     padding-top: 14vh;
-    padding-bottom: 2vh;
+    padding-bottom: 4vh;
 }
 
 .separador-top{

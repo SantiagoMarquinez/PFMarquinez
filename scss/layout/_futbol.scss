@@ -1,3 +1,10 @@
+.card-text-fut {
+    font-family: $main-font;
+    font-size: 13px;
+    height: 30vh;
+    overflow: hidden;
+}
+
 .internacional{
     &:hover{
         color: #222222;
